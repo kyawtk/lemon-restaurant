@@ -1,4 +1,22 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+*{
+  font-family: 'Markazi Text', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.innerWidth{
+  @apply lg:max-w-[1440px] w-full mx-auto;
+}
+
+.text-normal{
+  @apply text-xl  
+}
