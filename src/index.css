@@ -1,22 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap");
 
-
-  @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-*{
-  font-family: 'Markazi Text', serif;
-  margin: 0;
-  padding: 0;
+* {
+  @apply font-sans;
 }
 
-.innerWidth{
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply font-serif;
+}
+
+p {
+  @apply text-gray;
+}
+
+.image {
+  @apply w-full h-full;
+}
+
+.innerWidth {
   @apply lg:max-w-[1440px] w-full mx-auto;
 }
 
-.text-normal{
-  @apply text-xl  
+.text-normal {
+  @apply text-xl;
+}
+
+.hero__heading {
+  @apply text-4xl md:text-5xl lg:text-6xl font-semibold;
+}
+
+.subtitle {
+  @apply text-3xl md:text-4xl lg:text-5xl font-semibold;
+}
+
+.btn {
+  @apply text-xl font-semibold outline-none rounded-[16px] inline-block py-3 px-6;
+}
+
+.gradient-01 {
+  position: absolute;
+  width: 300px;
+  height: 438px;
+
+  z-index: 0;
+  background: #ffde04c7;
+  filter: blur(250px);
+}
+.gradient-red {
+  position: absolute;
+  width: 300px;
+  height: 438px;
+
+  z-index: 0;
+  background-image: linear-gradient(90deg, #cc1c1c 5%, #ffd43b 95%);
+  filter: blur(190px);
+}
+
+.carousel{
+  overflow: hidden;
+  margin: auto;
+  
+  min-width: 350px;
+  max-width: 900px;
+}
+.inner-carousel{
+  display: flex;
+  gap: 20px;
 }
